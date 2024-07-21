@@ -1,7 +1,7 @@
-import { Console } from "console";
+ 
 import mongoose  from "mongoose";
 
-// function for connecting to the database
+// function for connecting to the MongoDB database
 
 const connectMongoDB = async ()=>{
     try{
@@ -12,4 +12,4 @@ const connectMongoDB = async ()=>{
     }
 }
 
-export default connectMongoDB;
+export default connectMongoDB; // here we export the connectMongoDB instance to use in application

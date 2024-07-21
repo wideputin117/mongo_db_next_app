@@ -1,5 +1,6 @@
 import mongoose,{ Schema } from "mongoose";
-//this is schema declaration for topic
+
+// schema declaration for topic
 const topicSchema = new Schema(
     {
      title: String,

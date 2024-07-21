@@ -7,7 +7,7 @@ import { HiPencilAlt } from 'react-icons/hi'
 //to get list of data from mongodb
 async function getList(){
   try{
-const res = await fetch('http://localhost:3000/api/topics',{
+const res = await fetch('http://localhost:3000/api/topics',{ // this is fetching data from route in api/topics
   cache:"no-store"
 });
 if (!res.ok) {
@@ -39,7 +39,7 @@ console.log("Error loading topics: ", error);
                 <HiPencilAlt size={24} />
             </Link>
         </div>
-    </div>)}
+      </div>)}
     </>
   )
 }

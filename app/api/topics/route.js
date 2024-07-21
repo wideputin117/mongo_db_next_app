@@ -4,6 +4,7 @@ import connectMongoDB from "@/libs/mongodb";
 import Topic from "@/models/topics";
 import { NextResponse } from "next/server";
 
+// creating the a topic
 export async function POST(request){
     // destructure the incoming data from frontend
     const { title, description } = await request.json();
